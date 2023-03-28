@@ -1,3 +1,4 @@
+import PropTypes from 'react'
 
 export const GifItem = ({title, url}) => {
 
@@ -7,4 +8,12 @@ export const GifItem = ({title, url}) => {
         <p>{title}</p>
     </div>
   )
+}
+
+GifItem.propTypes = {
+  url: PropTypes.string,
+  title: PropTypes.string
+}
+GifItem.defaultProps = {
+    title: 'No hay título',
 }
